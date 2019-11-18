@@ -1,0 +1,10 @@
+Bisiestos
+
+La caracterización elegida es por funcionalidad: Distintos valores que pueda tener el año.
+Los bloques elegidos son: año normal (b1), año bisiesto estándar (b2), año no bisiesto por ser múltiplo de 100 (b3), año bisiesto por multiplo de 400 (b4) y año 0 o negativo (b5)
+
+RomanNumeral
+
+Las caracterizaciones son: 
+	c1: aparición de distintas letras (I, V, X, L, C, D, M) (b1, b2, b3)
+	c2: restas (b1, b2, b3)
