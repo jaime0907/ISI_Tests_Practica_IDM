@@ -2,3 +2,45 @@
 ### Jaime Solsona Álvarez - Doble grado Ing. Teleco + Ing. Aeroespacial
 ### Daniel Polo Álvarez - Doble grado Ing. Teleco + Ing. Aeroespacial
 
+
+# Bisiestos
+
+La caracterización elegida es por la funcionalidad: Distintos valores que pueda tener el año.
+Los bloques elegidos son: año normal (b1), año bisiesto estándar (b2), año no bisiesto por ser múltiplo de 100 (b3), año bisiesto por multiplo de 400 (b4) y año 0 o negativo (b5)
+
+# RomanNumeral
+
+Las caracterizaciones son:
+	c1: aparición de distintas letras (I, V, X, L, C, D, M) (bloques b1 a b7 para cada letra respectivamente, b8 para cualquier otra letra)
+	c2: restas:
+		b1 = resta válida
+		b2 = resta invalida por numero de tipo 1 restando a un tipo 1 no inmediatamente superior.
+		b3 = resta invalida por numero de tipo 5 restando
+
+# Embotelladora
+
+Caracterizando por funcionalidad nos encontramos con:
+	1. El número de botellas pequeñas sólo puede ser natural.
+	2. El número de botellas grandes sólo puede ser natural.
+	3. El número de litros a embotellar sólo puede ser natural.
+
+Usando un criterio Base Choice, los test abarcan los siguientes bloques:
+	d1: embotellamiento total del líquido
+	d2: embotellamiento parcial o nulo del líquido
+	d3: número de botellas pequeñas/grandes o litros negativo
+
+# DescuentoBlackFriday
+
+Caracterizando por funcionalidad nos encontramos con:
+	1. El día el que nos encontramos (Black Friday o cualquier otro día del año).
+	2. El precio solo puede ser natural (no puede ser negativo).
+	3. El porcentaje solo puede situarse entre 0 y 100.
+
+Usando un criterio Base Choice, solo podemos testar algunos test, ya que el tiempo no forma parte de nuestra especificación (se ha optado por mantener los parámetros y no extender la clase u otras modificaciones). Estos test abarcanlos siguientes bloques:
+	f1: día que no es BlackFriday --> pasa el test
+	f2: BlackFriday con distintos valores de descuento --> no pasa los test
+	f3: BlackFriday con descuento cero --> pasa el test
+	f4: BlackFriday con descuentos imposibles --> pasa el test
+	f5: precio cero --> pasa el test
+	f6: precio imposible --> pasa el test
+
